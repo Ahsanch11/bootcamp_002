@@ -22,9 +22,9 @@ jobs:
       - uses: actions/checkout@v2
       
       - name: Setup Node.js environment
-        uses: actions/setup-node@v2-beta
+        uses: actions/setup-node@v1-beta
         with:
-              version: 12
+              version: 14
       - name: github action for yarn
         uses: Borales/actions-yarn@v2.1.0
         with:
@@ -39,4 +39,4 @@ jobs:
         run: yarn global add surge 
       
       - name: deploying on surge
-        run: surge ./build bootcamp20_002.surge.sh --token ${{secrets.SURGE_TOKEN}}
+        run: surge ./build bt_002.surge.sh --token ${{secrets.SURGE_TOKEN}}
