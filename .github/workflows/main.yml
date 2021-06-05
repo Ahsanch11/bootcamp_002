@@ -36,7 +36,7 @@ jobs:
       # Runs a single command using the runners shell
       
       - name: installing surge  
-        run: npm install -g surge
+        run: yarn global add surge 
       
       - name: deploying on surge
-        run: surge ./build http://bootcamp20_002.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+        run: surge ./build bootcamp20_002.surge.sh --token ${{secrets.SURGE_TOKEN}}
