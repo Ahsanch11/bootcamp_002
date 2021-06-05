@@ -1,10 +1,12 @@
 //import logo from './logo.svg';
 import './App.css';
+import Header from "./components/Test";
 
 function App() {
+  const name = "facebook";
   return (
     <div className="App">
-      Hellow world
+      <Header title={name} />
     </div>
   );
 }
